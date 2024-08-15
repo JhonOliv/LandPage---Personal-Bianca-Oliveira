@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-shadow: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imgs/biaPersonal.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Ajuste o valor do desfoque conforme necessário */
+    z-index: -1; /* Mantém o fundo atrás do conteúdo */
+}
+
+
+
+#headFullScreen #titulo{
+	position: relative;
+	top: -150px;
+	color: white;
+	z-index: 5;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+
+}
+
+#headShartphone #titulo{
+	position: relative;
+	top: -130px;
+	color: white;
+	z-index: 5;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+
+}
+
+
+
+ #imgPerfil {
+            position: relative;
+        }
+
+        #imgPerfil::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem; /* Mantém o arredondamento da borda */
+            background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
+
+        }
+
+        #imgPerfil img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.25rem;
+        }
+
+        a{
+        	text-decoration: none;
+        }
